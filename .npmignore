@@ -1,0 +1,38 @@
+# Source files
+src/
+stories/
+.storybook/
+
+# Config files
+tsconfig.json
+tsconfig.node.json
+tsconfig.build.json
+
+# Documentation
+*.md
+!README.md
+
+# Development files
+.git
+.gitignore
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+.cache/
+storybook-static/
+
+# Tests
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+
+# Stories
+**/*.stories.tsx
+**/*.stories.ts

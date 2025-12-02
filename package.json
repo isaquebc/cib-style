@@ -1,14 +1,29 @@
 {
-  "name": "cib-style",
-  "version": "1.0.0",
+  "name": "@alphorriese/cib-style",
+  "version": "1.0.2",
   "description": "A reusable component library built with React, TypeScript, and styled-components following Atomic Design principles",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "scripts": {
+    "build": "tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "prepublishOnly": "npm run build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alphorriese/cib-style.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alphorriese/cib-style/issues"
+  },
+  "homepage": "https://github.com/alphorriese/cib-style#readme",
   "keywords": [
     "react",
     "components",
@@ -37,6 +52,7 @@
     "@types/react-dom": "^19.2.3",
     "@types/styled-components": "^5.1.36",
     "storybook": "^10.0.8",
+    "tsc-alias": "^1.8.16",
     "typescript": "^5.9.3"
   }
 }
