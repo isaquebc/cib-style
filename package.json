@@ -18,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alphorriese/cib-style.git"
+    "url": "git+https://github.com/isaquebc/cib-style.git"
   },
   "bugs": {
-    "url": "https://github.com/alphorriese/cib-style/issues"
+    "url": "https://github.com/isaquebc/cib-style/issues"
   },
-  "homepage": "https://github.com/alphorriese/cib-style#readme",
+  "homepage": "https://github.com/isaquebc/cib-style#readme",
   "keywords": [
     "react",
     "components",
