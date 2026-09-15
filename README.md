@@ -2,6 +2,8 @@
 
 A reusable component library built with **React**, **TypeScript**, and **styled-components** following the **Atomic Design** pattern.
 
+Repository: [github.com/isaquebc/cib-style](https://github.com/isaquebc/cib-style)
+
 ## Features
 
 - ⚛️ Built with React 19 and TypeScript
@@ -373,4 +375,4 @@ The project uses TypeScript path aliases for cleaner imports:
 
 ## License
 
-ISC
+[AGPL-3.0-or-later](LICENSE)
