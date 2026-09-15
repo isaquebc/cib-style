@@ -115,7 +115,23 @@ export const FormBuilder = ({
 
   // Update form data when defaultValues change
   useEffect(() => {
-    setFormData(prev => ({ ...prev, ...defaultValues }));
+    // Only update if defaultValues actually has values
+    if (Object.keys(defaultValues).length > 0) {
+      setFormData(prev => {
+        const updated = { ...prev };
+        let hasChanges = false;
+
+        // Only update fields that have actually changed
+        Object.keys(defaultValues).forEach(key => {
+          if (prev[key] !== defaultValues[key]) {
+            updated[key] = defaultValues[key];
+            hasChanges = true;
+          }
+        });
+
+        return hasChanges ? updated : prev;
+      });
+    }
   }, [defaultValues]);
 
   const handleFieldChange = (fieldName: string, value: any) => {

@@ -1,6 +1,6 @@
 {
   "name": "@alphorriese/cib-style",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A reusable component library built with React, TypeScript, and styled-components following Atomic Design principles",
   "main": "dist/index.js",
   "module": "dist/index.js",
